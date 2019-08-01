@@ -7,14 +7,18 @@ default: &default
 development:
   <<: *default
   database: readme-translation_development
+  host: localhost
+  username: root
+  password: "<%= Rails.application.credentials.local_db_pass %>"
 
 test:
   <<: *default
   database: readme-translation_test
   host: localhost
   username: root
-  password:
+  password: "<%= Rails.application.credentials.local_db_pass %>"
 
 production:
   <<: *default
-  url: ""
+  url: "<%= Rails.application.credentials.cleardb_database_url %>"
+
