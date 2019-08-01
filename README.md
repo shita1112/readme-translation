@@ -1,24 +1,9 @@
-# README
+## Readme翻訳のエレベーターピッチ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`Readme翻訳` というサービスは、
+`Gemを利用する時に、英語が苦手なためReadmeを読まないという問題` を解決したい
+`英語が苦手なRailsプログラマ(=自分)` 向けの、
+`英語技術文書のリーディング支援ツール`です。
+ユーザーは`Readmeの隣に表示されるGoogle翻訳の結果を読み、日本語で大意を掴むことで、Readmeを読む負担を減らす`ことができ、
+`日本語に翻訳(chrome内蔵のGoogle翻訳機能)でReadmeを読む` 場合とは違って、
+`Google翻訳を原文を読むための補助として利用します。`
