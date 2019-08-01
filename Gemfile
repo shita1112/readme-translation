@@ -14,8 +14,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 
-
-
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
@@ -27,6 +25,14 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'letter_opener'
+  gem 'letter_opener_web'
+  gem 'rack-mini-profiler'
+  gem 'bullet'
+  gem 'pry-byebug'
+  gem 'pry-alias'
+  gem 'rubocop', require: false
+  gem "onkcop", require: false
 end
 
 group :production do
@@ -34,3 +40,19 @@ group :production do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'tapp'
+gem 'awesome_print'
+gem 'slim-rails'
+gem 'newrelic_rpm'
+gem 'google-analytics-rails'
+gem 'faraday'
+gem 'sitemap_generator'
+gem 'meta-tags'
+gem 'config'
+gem 'active_decorator'
+gem 'gon'
+gem "active_hash"
+gem 'pry-rails'
+gem 'pry-doc'
+
