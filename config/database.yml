@@ -9,14 +9,14 @@ development:
   database: readme-translation_development
   host: localhost
   username: root
-  password: "<%= Rails.application.credentials.local_db_pass %>"
+  password:
 
 test:
   <<: *default
   database: readme-translation_test
   host: localhost
   username: root
-  password: "<%= Rails.application.credentials.local_db_pass %>"
+  password:
 
 production:
   <<: *default
