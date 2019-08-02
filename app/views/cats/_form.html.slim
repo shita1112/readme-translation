@@ -1,0 +1,15 @@
+= form_with(model: cat, local: true) do |form|
+  - if cat.errors.any?
+    #error_explanation
+      h2
+        = pluralize(cat.errors.count, "error")
+        |  prohibited this cat from being saved:
+      ul
+        - cat.errors.full_messages.each do |message|
+          li
+            = message
+  .field
+    = form.label :name
+    = form.text_field :name
+  .actions
+    = form.submit
