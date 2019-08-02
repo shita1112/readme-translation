@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CatsController < ApplicationController
   before_action :set_cat, only: [:show, :edit, :update, :destroy]
 
