@@ -31,9 +31,13 @@ group :development do
   gem 'bullet'
   gem 'pry-byebug'
   gem 'pry-alias'
-  gem 'rubocop', require: false
-  gem "onkcop", require: false
+  # onkcopがrubocopの最新版に対応するまでバージョン固定
+  gem "onkcop", "0.53.0.3", require: false
+  gem "rubocop", "0.63.1", require: false
+  gem "rubocop-rspec", require: false
 end
+
+
 
 group :production do
   gem 'rails_12factor'
@@ -55,4 +59,5 @@ gem 'gon'
 gem "active_hash"
 gem 'pry-rails'
 gem 'pry-doc'
+
 
