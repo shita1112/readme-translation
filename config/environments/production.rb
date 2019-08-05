@@ -92,4 +92,6 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
 
   config.action_controller.asset_host = Rails.application.credentials.asset_host
+
+  GA.tracker = Rails.application.credentials.ga_tracker
 end
