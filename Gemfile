@@ -35,16 +35,17 @@ group :development do
   gem "letter_opener"
   gem "letter_opener_web"
   gem "listen", ">= 3.0.5", "< 3.2"
+  # onkcopがrubocop最新版に対応していないので、一時的にforkを使う
+  gem "onkcop", github: "shita1112/onkcop"
   gem "pry-alias"
   gem "pry-byebug"
   gem "rack-mini-profiler"
+  gem "rubocop"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
-  # onkcopがrubocopの最新版に対応するまでバージョン固定
-  gem "onkcop", "0.53.0.3", require: false
-  gem "rubocop", "0.63.1", require: false
-  gem "rubocop-rspec", require: false
 end
 
 group :test do

@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/shita1112/onkcop.git
+  revision: 7af40f9869dd9aa78e1e0eadee162524ddb0cef0
+  specs:
+    onkcop (0.53.0.3)
+      rubocop (>= 0.53.0)
+      rubocop-rspec (>= 1.24.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -196,7 +204,7 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
-    msgpack (1.3.0)
+    msgpack (1.3.1)
     multi_json (1.13.1)
     multipart-post (2.1.1)
     mysql2 (0.5.2)
@@ -204,14 +212,10 @@ GEM
     nio4r (2.4.0)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
-    onkcop (0.53.0.3)
-      rubocop (>= 0.53.0)
-      rubocop-rspec (>= 1.24.0)
     os (1.0.1)
     parallel (1.17.0)
     parser (2.6.3.0)
       ast (~> 2.4.0)
-    powerpack (0.1.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -249,7 +253,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.0.4)
+    rails-html-sanitizer (1.1.0)
       loofah (~> 2.2, >= 2.2.2)
     rails_12factor (0.0.3)
       rails_serve_static_assets
@@ -286,15 +290,17 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.2)
-    rubocop (0.63.1)
+    rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.5, != 2.5.1.1)
-      powerpack (~> 0.1)
+      parser (>= 2.6)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (~> 1.4.0)
-    rubocop-rspec (1.34.1)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    rubocop-rails (2.2.1)
+      rack (>= 1.1)
+      rubocop (>= 0.72.0)
+    rubocop-rspec (1.35.0)
       rubocop (>= 0.60.0)
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
@@ -344,7 +350,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
-    unicode-display_width (1.4.1)
+    unicode-display_width (1.6.0)
     uniform_notifier (1.12.1)
     web-console (3.7.0)
       actionview (>= 5.0)
@@ -380,7 +386,7 @@ DEPENDENCIES
   meta-tags
   mysql2 (>= 0.4.4, < 0.6.0)
   newrelic_rpm
-  onkcop (= 0.53.0.3)
+  onkcop!
   pry-alias
   pry-byebug
   pry-doc
@@ -390,7 +396,8 @@ DEPENDENCIES
   rails (~> 5.2.3)
   rails_12factor
   rspec-rails
-  rubocop (= 0.63.1)
+  rubocop
+  rubocop-rails
   rubocop-rspec
   sass-rails (~> 5.0)
   sitemap_generator
